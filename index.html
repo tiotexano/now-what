@@ -3,95 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Now What? LLC | Life After Treatment</title>
+    <title>Now What? | Life After the Storm</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Inter', system-ui, sans-serif; }
         .hero-font { font-family: 'Playfair Display', serif; }
-        .mirror-bg { background: linear-gradient(135deg, #1a1a1a 0%, #3b0d2a 100%); }
-        .glow-pink { box-shadow: 0 0 60px -10px rgb(236 72 153); }
     </style>
 </head>
 <body class="bg-black text-white">
-    <!-- NAV -->
-    <nav class="border-b border-white/10 bg-black/80 backdrop-blur-md fixed w-full z-50">
-        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+    <nav class="bg-black border-b border-pink-500/30">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <span class="text-3xl">🦋</span>
-                <span class="text-2xl font-bold tracking-tighter hero-font">Now What?</span>
+                <img src="logo.png" alt="Now What? Logo" class="h-10 w-auto">
+                <span class="text-2xl font-bold text-pink-400">Now What?</span>
             </div>
-            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-                <a href="#mission" class="hover:text-pink-400 transition-colors">Mission</a>
-                <a href="#stories" class="hover:text-pink-400 transition-colors">Stories</a>
-                <a href="#resources" class="hover:text-pink-400 transition-colors">Resources</a>
-                <a href="#community" class="hover:text-pink-400 transition-colors">Community</a>
+            <div class="hidden md:flex gap-8 text-pink-200">
+                <a href="#mission" class="hover:text-white">Mission</a>
+                <a href="#stories" class="hover:text-white">Stories</a>
+                <a href="#resources" class="hover:text-white">Resources</a>
+                <a href="#community" class="hover:text-white">Community</a>
             </div>
-            <a href="#join" class="bg-pink-500 hover:bg-pink-600 px-6 py-2.5 rounded-2xl text-sm font-semibold transition-all">Join Us</a>
+            <button class="bg-pink-500 hover:bg-pink-600 px-6 py-2 rounded-full text-white font-medium">Join Us</button>
         </div>
     </nav>
-
-    <!-- HERO -->
-    <section class="mirror-bg min-h-screen flex items-center pt-20">
-        <div class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-16 items-center">
-            <div class="space-y-10">
-                <div class="inline-flex items-center gap-2 px-5 py-2 bg-white/10 rounded-3xl text-pink-300 text-sm font-medium">
-                    <i class="fa-solid fa-heart-pulse"></i>
-                    SURVIVORSHIP • SUPPORT • HOPE
+    <!-- Hero -->
+    <section class="min-h-screen bg-gradient-to-br from-black to-[#4a0e2e] flex items-center">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center gap-2 bg-pink-500/10 text-pink-400 px-5 py-2 rounded-full text-sm">
+                    <span>🦋</span> SURVIVORSHIP • SUPPORT • HOPE
                 </div>
-                <h1 class="hero-font text-7xl md:text-8xl leading-[1.05] font-bold tracking-[-3px]">
-                    NOW<br>WHAT?
-                </h1>
-                <p class="text-3xl md:text-4xl text-pink-200 max-w-lg">You survived the treatment.<br>Now let's figure out what comes next.</p>
+                <h1 class="hero-font text-7xl md:text-8xl leading-none font-bold">NOW WHAT?</h1>
+                <p class="text-2xl text-pink-100 max-w-lg">You survived the treatment. Now let's figure out what comes next.</p>
                 <div class="flex flex-wrap gap-4">
-                    <a href="#join" class="px-8 py-5 bg-pink-500 hover:bg-pink-600 rounded-3xl font-semibold text-xl flex items-center gap-3 transition-all active:scale-95">
-                        Get Support Now <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                    <a href="#stories" class="px-8 py-5 border border-pink-400 hover:bg-white/10 rounded-3xl font-semibold text-xl transition-all">Hear Survivor Stories</a>
-                </div>
-                <div class="flex items-center gap-8 text-pink-400">
-                    <div class="flex -space-x-4">
-                        <div class="w-8 h-8 rounded-2xl bg-pink-400 flex items-center justify-center text-xs ring-2 ring-black">🦋</div>
-                        <div class="w-8 h-8 rounded-2xl bg-pink-400 flex items-center justify-center text-xs ring-2 ring-black">🐦</div>
-                    </div>
-                    <p class="text-sm max-w-[200px]">Butterflies & Hummingbirds — symbols of transformation and resilience</p>
+                    <a href="#" class="bg-pink-500 hover:bg-pink-600 px-8 py-4 rounded-3xl font-semibold text-lg">Get Support Now →</a>
+                    <a href="#" class="border border-pink-400 hover:bg-white/10 px-8 py-4 rounded-3xl font-semibold text-lg">Hear Survivor Stories</a>
                 </div>
             </div>
-
-            <!-- Logo Area -->
-            <div class="flex justify-center">
-                <div class="relative">
-                    <img src="https://via.placeholder.com/600x600/FF1493/000000?text=NOW+WHAT%3F+LOGO" alt="Now What? LLC Logo" class="w-96 md:w-[28rem] glow-pink rounded-3xl">
-                    <div class="absolute -top-4 -right-4 bg-black text-pink-400 text-xs font-mono px-4 py-1 rounded-2xl border border-pink-400/50">LLC</div>
-                </div>
-            </div>
+            <div>
+                <img src="logo.png" alt="Now What? LLC Logo" class="w-full max-w-md mx-auto drop-shadow-2xl" style="filter: drop-shadow(0 25px 25px rgb(236 72 153));"></div>
         </div>
     </section>
-
-    <section id="mission" class="py-24 bg-black">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="max-w-2xl">
-                <span class="px-4 py-2 bg-pink-500/10 text-pink-400 rounded-3xl text-sm">OUR WHY</span>
-                <h2 class="text-5xl hero-font mt-6 leading-tight">No survivor should ever feel abandoned when treatment ends.</h2>
-                <p class="mt-8 text-xl text-gray-300">We provide the community, resources, storytelling, advocacy and practical support that helps you answer the question “Now What?” with confidence and hope.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- More sections can be added -->
-
-    <footer class="bg-black py-16 border-t border-pink-400/20 text-center">
-        <div class="max-w-7xl mx-auto px-6">
-            <p class="text-2xl hero-font mb-2">Now What? LLC</p>
-            <p class="text-pink-300">Built with ❤️ by TexanoAI for Stephanie</p>
-            <p class="text-xs text-gray-500 mt-12">© 2026 • All Rights Reserved</p>
-        </div>
-    </footer>
-
-    <script>
-        // Tailwind script is loaded
-        console.log('Now What? site deployed - hot pink edition 🔥');
-    </script>
+    <footer class="py-12 text-center text-pink-300">© Now What? LLC • Built for Stephanie by Michael & Eve at TexanoAI 💕</footer>
 </body>
 </html>
